@@ -1,0 +1,22 @@
+name: 'Linear Release Notes '
+description: 'Greet someone and record the time'
+inputs:
+  version:
+    description: 'Version'
+    required: true
+  linear-team:
+    description: 'Linear Team'
+    required: true
+  linear-api-key:
+    description: 'Linear API Key'
+    required: true
+  # open-api-key:
+  #   description: 'Open API Key'
+  #   required: true
+outputs:
+  release_notes: # id of output
+    description: 'The formatted release notes'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+  
